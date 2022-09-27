@@ -40,4 +40,22 @@ const triggerActions = (count) => {
 }
 
 //Llamar a lafunccion con el limite de mensajes
-triggerActions(10);
+// triggerActions(10);
+
+// //Solucion de BEDU
+// const triggerActions = (count) => {
+//     const promises = [];
+//     const generatePromise = (i) => {
+//       return new Promise((resolve) => {
+//         processAction(i, resolve);
+//       });
+//     }
+//     for (let i = 1; i <= count; i += 1) {
+//       promises.push(generatePromise(i));
+//     }
+//     Promise.all(promises)
+//       .then((strings) => 
+//         strings.forEach((string) => console.log(string)));
+//   }
+  
+//   triggerActions(10);
